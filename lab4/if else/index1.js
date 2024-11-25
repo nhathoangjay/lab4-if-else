@@ -47,9 +47,13 @@ function namnhuan(x) {
 }
 console.log(namnhuan(1994))
 const na = ["a","e","u","i","o"]
-const e = "u"
+const e = "h"
 function nguyenam(x) {
-    return na.includes(x.toLowerCase())
+    for (let i = 0; i<=4;i++) {
+        if (x===na[i]) {
+            return true
+        }
+    }
 }
 if (nguyenam(e)==true) {
     console.log(e, "là nguyên âm")
