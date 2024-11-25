@@ -16,26 +16,36 @@ function chanhayle(x) {
     else return x, "là số lẻ"
 }
 console.log(chanhayle(so2))
+const so = [3,7,0]
 function solonnhat(so1,so2,so3) {
-    let max = so1
-    if(so2>max){
-        max =so2
-    }
-    else if (so3>max) {
-        max = so3
+    let max = 0
+    for (let i = 0;i<=2;i++) {
+        if (so[i] > max) {
+            max = so[i]
+        }
+
     }
     return max
 }
-console.log("số lớn nhất là",solonnhat(so1,so2,so3))
+console.log("số lớn nhất là",solonnhat(so))
 function namnhuan(x) {
-    if (x%4==0 || x%400 ==0) {
-        return  "là năm nhuận"
+    if (x%100 ==0) {
+        if (x%400 == 0) {
+            return  "là năm nhuận"
+
+        }
     }
     else {
-        return "ko phải là năm nhuận"
+        if (x%4==0) {
+            return  "là năm nhuận"
+        } 
+        else {
+            return  "ko phải là năm nhuận"
+        }
+    
     }
 }
-console.log(namnhuan(2022))
+console.log(namnhuan(1994))
 const na = ["a","e","u","i","o"]
 const e = "u"
 function nguyenam(x) {
