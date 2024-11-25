@@ -64,11 +64,11 @@ const a = 3
 const b = 4
 const c = 1
 function ptbac2(a,b,c) {
-    if (a == 0 && b ==0) {
+    if ((a == 0 && b ==0)|| (Math.pow(b,2)-4*a*c)<0) {
         return "vô nghiệm"
     }
-    if (a == 0 || (Math.pow(b,2)-4*a*c)<0)  {
-        return "có 1 nghiệm"
+    if (a == 0)  {
+        return "có 1 nghiệm" + -c/b
     }
     else {
 
